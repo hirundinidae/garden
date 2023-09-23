@@ -1,6 +1,6 @@
 baseURL = 'https://hack.lindiana.ca/'
 languageCode = 'en-us'
-title = 'Hugo PoC'
+title = 'garden'
 #theme = 'ananke'
 theme = 'vanilla-bootstrap-hugo-theme'
 
