@@ -1,0 +1,4 @@
+baseURL = 'https://hack.lindiana.ca/'
+languageCode = 'en-us'
+title = 'Hugo PoC'
+theme = 'ananke'
