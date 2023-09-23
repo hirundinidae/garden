@@ -14,7 +14,7 @@ pageRef = '/'
 weight = 10
 [[menu.nav]] 
 name = 'guides' 
-pageRef = '/posts' 
+pageRef = '/guides' 
 weight = 11 
 
 #[markup]
