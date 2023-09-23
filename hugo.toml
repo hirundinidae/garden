@@ -1,4 +1,30 @@
 baseURL = 'https://hack.lindiana.ca/'
 languageCode = 'en-us'
 title = 'Hugo PoC'
-theme = 'ananke'
+#theme = 'ananke'
+theme = 'vanilla-bootstrap-hugo-theme'
+
+[taxonomies] 
+tags = 'tags'
+
+[menu] 
+[[menu.nav]]
+name = 'home'
+pageRef = '/'
+weight = 10
+[[menu.nav]] 
+name = 'guides' 
+pageRef = '/posts' 
+weight = 11 
+
+#[markup]
+#  [markup.goldmark]
+#    [markup.goldmark.extensions]
+#      definitionList = true
+#      footnote = true
+#      linkify = true
+#      linkifyProtocol = 'https'
+#      strikethrough = true
+#      table = true
+#      taskList = true
+
