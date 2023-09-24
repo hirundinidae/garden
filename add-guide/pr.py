@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os 
 import random 
 import ocr
+import datetime
 
 load_dotenv() 
 
@@ -16,10 +17,20 @@ print(garden)
 
 # create branch and commit 
 main = garden.get_branch("main") 
-branch = garden.create_git_ref(f"refs/heads/test-branch-{random.random()}", main.commit.sha)
-path = "test.txt" 
-message = "test commit with test.txt" 
-content = ocr.get_text('md.png')
+text = ocr.get_text('md.png')
+guide_name = text[0:text.index("\n")].strip("# ")
+filename = guide_name.replace(' ', '-')
+branch = garden.create_git_ref(f"refs/heads/add-{filename}", main.commit.sha)
+frontmatter = f"""+++
+title = {guide_name}
+date = {datetime.datetime.now()}
+draft = false
++++
+
+"""
+content = frontmatter + text
+path = f"content/guides/{filename}.md"
+message = f"Add {filename}.txt"
 garden.create_file(path, message, content, branch.ref)
 
 # create PR 
