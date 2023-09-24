@@ -16,6 +16,10 @@ weight = 10
 name = 'guides' 
 pageRef = '/guides' 
 weight = 11 
+[[menu.nav]] 
+name = 'tags' 
+pageRef = '/tags'
+weight = 12
 
 #[markup]
 #  [markup.goldmark]
