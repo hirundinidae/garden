@@ -16,9 +16,13 @@ weight = 10
 name = 'guides' 
 pageRef = '/guides' 
 weight = 11 
+[[menu.nav]] 
+name = 'tags'
+pageRef = '/tags' 
+weight = 12
 
-#[markup]
-#  [markup.goldmark]
+[markup]
+  [markup.goldmark]
 #    [markup.goldmark.extensions]
 #      definitionList = true
 #      footnote = true
@@ -27,4 +31,6 @@ weight = 11
 #      strikethrough = true
 #      table = true
 #      taskList = true
+    [markup.goldmark.renderer]
+      unsafe = true
 

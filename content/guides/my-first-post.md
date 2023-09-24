@@ -17,14 +17,18 @@ needs sun
 |row 1|column info|
 {{< /bootstrap-table >}}
 
+{{< expand >}}
+{{< summary >}}
 ### sow 
+{{< /summary >}}
 seeds? 
+info here 
+{{< /expand >}}
 
 ### care 
 how to care while growing? 
 
 1. numbered steps 
 2. are cool 
-
 ### harvest 
 when to pick tomatos? 
