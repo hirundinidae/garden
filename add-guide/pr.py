@@ -3,6 +3,7 @@ from github import Auth
 from dotenv import load_dotenv
 import os 
 import random 
+import ocr
 
 load_dotenv() 
 
@@ -18,10 +19,7 @@ main = garden.get_branch("main")
 branch = garden.create_git_ref(f"refs/heads/test-branch-{random.random()}", main.commit.sha)
 path = "test.txt" 
 message = "test commit with test.txt" 
-content = """
-#title 
-## description 
-"""
+content = ocr.get_text('md.png')
 garden.create_file(path, message, content, branch.ref)
 
 # create PR 
