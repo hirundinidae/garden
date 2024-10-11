@@ -7,13 +7,15 @@ I was inspired by [OpenFarm](https://openfarm.cc/) and my neighborhood's communi
 ## What it does ✏
 This project aims to increase access to gardening knowledge in my community. It stores gardening guides in Markdown files and renders them with Hugo. To add guides, it has a script to parse a written guide to Markdown and create a PR to add it to the site. 
 
+![garden](https://github.com/user-attachments/assets/d4150909-f07d-4a46-b02f-16cb37e20e04)
+
 ## How we built it 👷‍♀️
-Hugo to display Markdown guides 
-[pytesseract](https://pypi.org/project/pytesseract/) for OCR on written guides 
-[PyGithub](https://github.com/PyGithub/PyGithub) to automate PRs to add guides  
-Github 
-- Pages for deployment 
-- Project board for task management 
+- Hugo to display Markdown guides 
+- [pytesseract](https://pypi.org/project/pytesseract/) for OCR on written guides 
+- [PyGithub](https://github.com/PyGithub/PyGithub) to automate PRs to add guides  
+- Github 
+  - Pages for deployment 
+  - Project board for task management
 
 ## Challenges we ran into 😢
 Mostly time constraints that led to adapting priorities and requirements. I had issues connecting a custom subdomain to Github pages and with adding a shortcode to render guide steps as `<details>` and `<summary>` blocks. With more time, I would have investigated further and tried to resolve these. 
