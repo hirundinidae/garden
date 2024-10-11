@@ -1,6 +1,8 @@
 # garden.md
 (gardening in Markdown) 
+
 Submitted to TechNova 2023 
+
 ## Inspiration 💡
 I was inspired by [OpenFarm](https://openfarm.cc/) and my neighborhood's community garden. OpenFarm is also a platform to share gardening information, but it is not actively maintained. I wanted to share that information using Markdown files with the hope that it is easier to maintain. I've previously volunteered in the community garden and have seen more youth get involved. So, I wanted to make it easier for older community members (that spend a lot of time in the garden) to share their knowledge with younger community members hoping to contribute. 
 
@@ -25,4 +27,5 @@ It was my first time using a lot of these tools (tesseract, Hugo) and I'm happy 
 
 ## What's next for garden.md ❓
 Lots of UI/UX polishing :] 
+
 I could pitch this to community gardeners and get feedback from the garden facilitator. If it goes well, I could look into deploying this for my neighborhood to access. I could set up guide-making workshops with the seniors and publish those to the site. 
